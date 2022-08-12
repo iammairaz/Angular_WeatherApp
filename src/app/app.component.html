@@ -1,8 +1,9 @@
 
-<div class="search" (submit)="onSubmit()" >
+<div class="search" (submit)="onSubmit()">
   <form >
     <input type="text" placeholder="Search City" name="city" [(ngModel)]="cityName">
   </form>
+  <button type="button" class="search" (click)="onSubmit()">Submit</button>
 </div>
 <div class="container" *ngIf="weatherData">
   <div class="upper-data">
